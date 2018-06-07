@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mcandroid.bmicalculator.BMIResultsScreen">
+
+    <TextView
+        android:id="@+id/lblYourBMI"
+        android:layout_width="179dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="114dp"
+        android:layout_marginTop="78dp"
+        android:text="Your BMI is..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintBottom_toTopOf="@+id/lblBMIResultCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblBMIResult"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="44dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/lblBMIResultCategory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCloseResults"
+        android:layout_width="53dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="16dp"
+        android:text="X"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblBMIResultCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="79dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnCheckAgain"
+        app:layout_constraintStart_toStartOf="@+id/lblBMIResult"
+        app:layout_constraintTop_toBottomOf="@+id/lblYourBMI" />
+
+    <Button
+        android:id="@+id/btnCheckAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="112dp"
+        android:layout_marginEnd="121dp"
+        android:text="Check Again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblBMIResultCategory" />
+</android.support.constraint.ConstraintLayout>
