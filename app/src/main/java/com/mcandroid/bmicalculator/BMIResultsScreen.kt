@@ -11,8 +11,10 @@ class BMIResultsScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bmiresults_screen)
+
         showBMIResult()
         findBMICategory()
+
         setExitListener()
         setCheckAgainListener()
     }
@@ -54,7 +56,7 @@ class BMIResultsScreen : AppCompatActivity() {
 
     fun setCheckAgainListener(){
         btnCheckAgain.setOnClickListener{
-            val intent = Intent("com.mcandroid.bmicalculator.MainActivity")
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
